@@ -1,0 +1,51 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 979 >>
+stream
+BT /F2 28 Tf 56 740 Td (Cade Lastname) Tj ET
+BT /F1 11 Tf 56 700 Td (Media & Journalism Student  |  hello@example.com  |  [City, State]) Tj ET
+BT /F1 11 Tf 56 677 Td () Tj ET
+BT /F2 13 Tf 56 654 Td (PLACEHOLDER RESUME) Tj ET
+BT /F1 11 Tf 56 629 Td (Replace this file \(assets/docs/cade-lastname-resume.pdf\) with your real resume.) Tj ET
+BT /F1 11 Tf 56 606 Td () Tj ET
+BT /F2 13 Tf 56 583 Td (Experience) Tj ET
+BT /F1 11 Tf 56 558 Td (Staff Reporter, The Campus Ledger - 2024-Present) Tj ET
+BT /F1 11 Tf 56 535 Td (Anchor & MMJ, WXYZ Student TV - 2024-Present) Tj ET
+BT /F1 11 Tf 56 512 Td (Summer Intern, [Local News Outlet] - 2025) Tj ET
+BT /F1 11 Tf 56 489 Td () Tj ET
+BT /F2 13 Tf 56 466 Td (Education) Tj ET
+BT /F1 11 Tf 56 441 Td (B.A. Media & Journalism, [University Name] - Class of 2027) Tj ET
+BT /F1 11 Tf 56 418 Td () Tj ET
+BT /F2 13 Tf 56 395 Td (Skills) Tj ET
+BT /F1 11 Tf 56 370 Td (Reporting, AP style, photography, video production, data journalism, audio) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000001281 00000 n 
+0000001351 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1426
+%%EOF
