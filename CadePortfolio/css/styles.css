@@ -57,8 +57,30 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
   display: flex; align-items: center; justify-content: space-between;
   flex-wrap: wrap; min-height: 64px; padding-block: 12px; gap: 8px 24px;
 }
-.site-name { font-weight: 600; font-size: 17px; white-space: nowrap; transition: color .15s; }
-.site-name:hover { color: var(--accent); }
+.site-name { font-weight: 600; font-size: 17px; white-space: nowrap; }
+/* Hover fill (site name and the current page's nav link): red sweeps across the letters left to right
+   on hover, then retreats right to left on leave. The text is painted by a half-red, half-normal gradient
+   that slides across it; a single layer, so no lighter text shows through at the letter edges. */
+.site-name, .nav a[aria-current="page"] {
+  display: inline-block;
+  background-image: linear-gradient(to right, var(--accent) 50%, var(--text) 50%);
+  background-size: 200% 100%; background-position: 100% 0;
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  /* Leaving: retreat right to left, a little slower */
+  transition: background-position .7s cubic-bezier(.4, 0, .2, 1);
+}
+.site-name:hover, .site-name:focus-visible, .nav a[aria-current="page"]:hover, .nav a[aria-current="page"]:focus-visible {
+  background-position: 0 0; color: transparent;
+  transition: background-position .45s cubic-bezier(.4, 0, .2, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-name, .nav a[aria-current="page"] { transition: none !important; }
+}
+/* High contrast mode drops background images, so fall back to plain text color */
+@media (forced-colors: active) {
+  .site-name, .nav a[aria-current="page"] { background: none; color: LinkText; }
+}
 .nav { display: flex; align-items: center; gap: 0; margin: 0; padding: 0; list-style: none; }
 /* Thin vertical divider between nav items */
 .nav li + li::before {
@@ -67,7 +89,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 }
 .nav a { color: var(--muted); font-size: 15px; transition: color .15s; }
 .nav a:hover { color: var(--text); }
-.nav a[aria-current="page"] { color: var(--text); }
 @media (max-width: 480px) {
   .nav li + li::before { margin: 0 12px; }
 }
